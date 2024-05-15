@@ -93,15 +93,15 @@ Configuration settings are managed via a configuration file located in the `.str
 
 4. **Ensure that `secrets.toml` contains the correct paths and API keys:**
 
-    - `OPENAI_API_KEY`: [Obtain your OpenAI API key](https://openai.com/docs/developer-quickstart/).
-    - `ASTRA_ENDPOINT` and `ASTRA_TOKEN`: [Get your Astra DB credentials](https://docs.datastax.com/en/astra/docs/).
+    - `OPENAI_API_KEY`: [Obtain your OpenAI API key](https://openai.com/docs/developer-quickstart/](https://platform.openai.com/api-keys)).
+    - `ASTRA_ENDPOINT` and `ASTRA_TOKEN`: [Get your Astra DB credentials](https://docs.datastax.com/en/astra-db-serverless/api-reference/dataapiclient.html).
     - `LANGCHAIN_ENDPOINT`, `LANGCHAIN_API_KEY`, and `LANGCHAIN_PROJECT`: Check the documentation for LangSmith or contact their support team for more information.
 
 For more information about each service, refer to the following links:
 
-- [OpenAI Developer Quickstart](https://openai.com/docs/developer-quickstart/)
-- [DataStax Astra Documentation](https://docs.datastax.com/en/astra/docs/)
-- [LangSmith Documentation](https://example-langsmith-docs.com/)
+- [OpenAI Developer Quickstart](https://platform.openai.com/docs/quickstart)
+- [DataStax Astra Documentation]([https://docs.datastax.com/en/astra/docs/](https://docs.datastax.com/en/astra-db-serverless/get-started/quickstart.html))
+- [LangSmith Documentation]([https://example-langsmith-docs.com/](https://docs.smith.langchain.com/old/tracing))
 
 
 ## Running the Code
