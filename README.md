@@ -99,6 +99,5 @@ Configuration settings are managed via a configuration file located in the `.str
 To run the main script, use the following command:
 
 ```sh
-streamlit run main.py --server.port<input_your_port>
-
- 
+streamlit run main.py --server.port 8080
+```
