@@ -78,21 +78,32 @@ Configuration settings are managed via a configuration file located in the `.str
 
     ```toml
     # secrets.toml
-    model_name = "your_pretrained_model_name"
-    data_path = "path/to/your/dataset"
-    output_path = "path/to/save/results"
-    
-    [api_keys]
-    service_1 = "your_api_key_for_service_1"
-    service_2 = "your_api_key_for_service_2"
+    # OpenAI secrets
+    OPENAI_API_KEY = "your_openai_api_key"
+
+    # Astra DB secrets
+    ASTRA_ENDPOINT = "your_astra_endpoint"
+    ASTRA_TOKEN = "your_astra_token"
+
+    # Optionally: LangSmith secrets for tracing
+    LANGCHAIN_TRACING_V2 = "true"
+    LANGCHAIN_ENDPOINT = "your_langsmith_endpoint"
+    LANGCHAIN_API_KEY = "your_langsmith_api_key"
+    LANGCHAIN_PROJECT = "your_langsmith_project"
     ```
 
 4. **Ensure that `secrets.toml` contains the correct paths and API keys:**
 
-    - `model_name`: Name of the pretrained model you are using.
-    - `data_path`: Path to your dataset.
-    - `output_path`: Path to save the results.
-    - `api_keys`: API keys for any external services required by the scripts.
+    - `OPENAI_API_KEY`: [Obtain your OpenAI API key](https://openai.com/docs/developer-quickstart/).
+    - `ASTRA_ENDPOINT` and `ASTRA_TOKEN`: [Get your Astra DB credentials](https://docs.datastax.com/en/astra/docs/).
+    - `LANGCHAIN_ENDPOINT`, `LANGCHAIN_API_KEY`, and `LANGCHAIN_PROJECT`: Check the documentation for LangSmith or contact their support team for more information.
+
+For more information about each service, refer to the following links:
+
+- [OpenAI Developer Quickstart](https://openai.com/docs/developer-quickstart/)
+- [DataStax Astra Documentation](https://docs.datastax.com/en/astra/docs/)
+- [LangSmith Documentation](https://example-langsmith-docs.com/)
+
 
 ## Running the Code
 
