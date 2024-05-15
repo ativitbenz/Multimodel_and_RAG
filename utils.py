@@ -176,6 +176,7 @@ def load_vectorstore(_embedding, username):
         api_endpoint=os.environ["ASTRA_ENDPOINT"],
     )
 
+
 @st.cache_resource()
 def load_chat_history(username):
     return AstraDBChatMessageHistory(

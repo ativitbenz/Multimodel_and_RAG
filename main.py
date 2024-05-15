@@ -9,7 +9,6 @@ from langchain.schema.runnable import RunnableMap
 from langchain.callbacks.tracers import ConsoleCallbackHandler
 import os
 
-
 st.set_page_config(page_title='Your Enterprise Sidekick', page_icon='🚀')
 
 # Initialize session state
@@ -43,7 +42,7 @@ with st.sidebar:
 # Options panel
 with st.sidebar:
     # Chat history settings
-    disable_chat_history = st.checkbox('Disable chat history')
+    disable_chat_history = st.toggle('Disable chat history')
     top_k_history = st.slider('Number of chat history messages', 1, 50, 5, disabled=disable_chat_history)
     memory = ModelManager.load_memory(chat_history, top_k_history if not disable_chat_history else 0)
     delete_history = st.button('Delete chat history', disabled=disable_chat_history)
@@ -96,6 +95,14 @@ if 'delete_option' in st.secrets and st.secrets.delete_option.get(username, 'Fal
                vectorstore.clear()
                memory.clear()
                st.session_state.messages = [AIMessage(content="Hello! I'm an AI assistant. How can I help you?")]
+
+# Drop collection 
+with st.sidebar:
+    st.caption('Delete Collection')
+    delete = st.button('Delete Collection')
+    if delete:
+        vectorstore.delete_collection()
+        st.write('Collections deleted successfully.')
 
 # Draw all messages, both user and agent so far (every time the app reruns)
 for message in st.session_state.messages:
