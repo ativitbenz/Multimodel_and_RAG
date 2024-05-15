@@ -9,7 +9,6 @@ This repository provides implementations for Multimodal Retrieval-Augmented Gene
 - [Virtual Environment Setup](#virtual-environment-setup)
 - [Configuration](#configuration)
 - [Running the Code](#running-the-code)
-- [Usage](#usage)
 
 
 ## Requirements
