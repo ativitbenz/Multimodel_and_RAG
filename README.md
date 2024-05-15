@@ -100,8 +100,8 @@ Configuration settings are managed via a configuration file located in the `.str
 For more information about each service, refer to the following links:
 
 - [OpenAI Developer Quickstart](https://platform.openai.com/docs/quickstart)
-- [DataStax Astra Documentation]([https://docs.datastax.com/en/astra/docs/](https://docs.datastax.com/en/astra-db-serverless/get-started/quickstart.html))
-- [LangSmith Documentation]([https://example-langsmith-docs.com/](https://docs.smith.langchain.com/old/tracing))
+- [DataStax Astra Documentation]([https://docs.datastax.com/en/astra/docs/](https://docs.datastax.com/en/astra-db-serverless/get-started/quickstart.html)
+- [LangSmith Documentation]([https://example-langsmith-docs.com/](https://docs.smith.langchain.com/old/tracing)
 
 
 ## Running the Code
