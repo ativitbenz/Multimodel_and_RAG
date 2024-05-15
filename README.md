@@ -15,7 +15,7 @@ This repository provides implementations for Multimodal Retrieval-Augmented Gene
 
 Before you start, ensure you have the following:
 
-- Python 3.7 or later
+- Python 3.10 or later
 - pip (Python package installer)
 
 ## Installation
