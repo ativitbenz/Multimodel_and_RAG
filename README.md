@@ -1,6 +1,6 @@
-# Multimodel_and_RAG
+# Multimodal Retrieval-Augmented Generation (RAG) System
 
-This repository provides implementations for Multimodal Retrieval-Augmented Generation (RAG) systems. It combines various models and techniques to enhance the retrieval and generation processes using both text and image data.
+This repository provides implementations for Multimodal Retrieval-Augmented Generation (RAG) systems, combining various models and techniques to enhance retrieval and generation processes using both text and image data.
 
 ## Table of Contents
 
@@ -9,11 +9,11 @@ This repository provides implementations for Multimodal Retrieval-Augmented Gene
 - [Virtual Environment Setup](#virtual-environment-setup)
 - [Configuration](#configuration)
 - [Running the Code](#running-the-code)
-
+- [Credits](#credits)
 
 ## Requirements
 
-Before you start, ensure you have the following:
+Ensure you have the following prerequisites:
 
 - Python 3.10 or later
 - pip (Python package installer)
@@ -29,7 +29,7 @@ Before you start, ensure you have the following:
 
 ## Virtual Environment Setup
 
-It's recommended to use a virtual environment to manage your dependencies. Follow these steps:
+It is recommended to use a virtual environment to manage your dependencies. Follow these steps:
 
 1. **Create a virtual environment:**
 
@@ -93,16 +93,15 @@ Configuration settings are managed via a configuration file located in the `.str
 
 4. **Ensure that `secrets.toml` contains the correct paths and API keys:**
 
-    - `OPENAI_API_KEY`: [Obtain your OpenAI API key](https://openai.com/docs/developer-quickstart/](https://platform.openai.com/api-keys)).
+    - `OPENAI_API_KEY`: [Obtain your OpenAI API key](https://platform.openai.com/api-keys).
     - `ASTRA_ENDPOINT` and `ASTRA_TOKEN`: [Get your Astra DB credentials](https://docs.datastax.com/en/astra-db-serverless/api-reference/dataapiclient.html).
-    - `LANGCHAIN_ENDPOINT`, `LANGCHAIN_API_KEY`, and `LANGCHAIN_PROJECT`: Check the documentation for LangSmith or contact their support team for more information.
+    - `LANGCHAIN_ENDPOINT`, `LANGCHAIN_API_KEY`, and `LANGCHAIN_PROJECT`: Refer to the [LangSmith documentation](https://docs.smith.langchain.com/old/tracing) or contact their support for more information.
 
 For more information about each service, refer to the following links:
 
 - [OpenAI Developer Quickstart](https://platform.openai.com/docs/quickstart)
 - [DataStax Astra Documentation](https://docs.datastax.com/en/astra-db-serverless/get-started/quickstart.html)
 - [LangSmith Documentation](https://docs.smith.langchain.com/old/tracing)
-
 
 ## Running the Code
 
@@ -111,3 +110,6 @@ To run the main script, use the following command:
 ```sh
 streamlit run main.py --server.port 8080
 ```
+
+## Credits
+This project is based on the implementation found in the [ragstack-astradb](https://github.com/michelderu/ragstack-astradb) repository by Michelderu.
